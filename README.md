@@ -1,1 +1,1 @@
-This repository contains Web Programs(HTML,CSS,PHP programs).
+This repository contains Web Programs(HTML,CSS,PHP).
