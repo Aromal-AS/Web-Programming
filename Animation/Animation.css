@@ -1,0 +1,204 @@
+body{
+    background-color: rgb(56, 56, 56);
+}
+div{
+    width: 100px;
+    height: 100px;
+    margin:10px;
+    position: relative;
+  
+}
+#div1{
+    background-image:linear-gradient(to bottom right,
+        rgb(224, 221, 16) 0px 50px,
+        rgb(41, 40, 40) 50px 100px
+    );
+ 
+    animation-name: move2;
+    animation-duration: 5s;
+    animation-timing-function: ease ;
+    animation-iteration-count: 2;
+    animation-direction: none;
+   
+    
+}
+#div2{
+    
+    background-image:repeating-radial-gradient(
+        rgb(201, 0, 67) 0px 10px,
+        rgb(165, 16, 165) 10px 20px 
+        );
+
+    animation-name: move2;
+    animation-duration: 5s;
+    animation-timing-function: ease ;
+    animation-iteration-count: 2;
+    animation-direction: reverse ;
+   
+    
+}
+#div3{
+    background-image:linear-gradient(to right,rgb(7, 223, 212),rgb(255, 241, 51),red); 
+    animation-name: move;
+    animation-duration: 5s;
+    animation-timing-function: ease ;
+    animation-iteration-count: 2;
+    animation-direction: reverse;
+   
+    
+}
+#div4{
+    background-color: greenyellow;
+    animation-name: move1;
+    animation-duration: 5s;
+    animation-timing-function: ease ;
+    animation-iteration-count: 2;
+    animation-direction: reverse;
+   
+    
+}
+#div5{
+    background-image:linear-gradient(rgb(6, 39, 99),rgb(0, 173, 87),red); 
+    animation-name: move;
+    animation-duration: 5s;
+    animation-timing-function: ease ;
+    animation-iteration-count: 2;
+    animation-direction: none;
+   
+    
+}
+#div6{
+    background-color:rgba(165, 0, 69, 0.959); 
+    animation-name: move1;
+    animation-duration: 5s;
+    animation-timing-function: ease ;
+    animation-iteration-count: 2;
+    animation-direction: none;
+   
+    
+}
+
+@keyframes move{
+    0%{
+        left: 0px;
+        top:0px
+        border-radius 10PX;
+    }
+    25%{
+        left: 400PX;
+        top: 0px;
+        border-radius: 20PX;
+    }
+    50%{
+        left: 400PX;
+        top: 300px;
+        border-radius: 30PX;
+    }
+    75%{
+        left: 0PX;
+        top: 300px;
+        border-radius: 40PX;
+    }
+    100%{
+        left: 0px;
+        top: 0PX;
+        border-radius: 50PX;
+    }
+}
+@keyframes move1{
+    0%{
+        left: 0px;
+        top:0px
+        border-radius 10PX;
+    }
+    25%{
+        left: 150PX;
+        top: 150px;
+        border-radius: 20PX;
+    }
+    50%{
+        left: 300PX;
+        top: 300px;
+        border-radius: 30PX;
+    }
+    75%{
+        left: 150PX;
+        top: 150px;
+        border-radius: 40PX;
+    }
+    100%{
+        left: 0px;
+        top: 0PX;
+        border-radius: 50PX;
+    }
+}
+@keyframes move2{
+    0%{
+        left: 100%;
+        top: 0%;
+        border-radius: 10PX;
+    }
+    8%{
+        left: 800%;
+        top: 0%;
+        border-radius: 20PX;
+    }
+    16%{
+        left: 0PX;
+        top: 200px;
+        border-radius: 30PX;
+    }
+    24%{
+        left: 800%;
+        top: 200%;
+        border-radius: 40PX;
+    }
+    32%{
+        left: 0px;
+        top: 300PX;
+        border-radius: 50PX;
+    }
+    40%{
+        left: 600px;
+        top: 400PX;
+        border-radius: 50PX;
+    }
+    48%{
+        left: 0px;
+        top: 500PX;
+        border-radius: 50PX;
+    }
+    56%{
+        left: 400px;
+        top: 400PX;
+        border-radius: 50PX;
+    }
+    64%{
+        left: 0px;
+        top: 300PX;
+        border-radius: 50PX;
+    }
+    72%{
+        left: 200px;
+        top: 200PX;
+        border-radius: 50PX;
+    }
+    80%{
+        left: 0px;
+        top: 200PX;
+        border-radius: 50PX;
+    }
+    90%{
+        left: 100px;
+        top:  0PX;
+        border-radius: 50PX;
+    }
+    100%{
+        left: 0px;
+        top:  0PX;
+        border-radius: 50PX;
+    }
+}
+
+
+
