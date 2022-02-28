@@ -1,0 +1,36 @@
+<html>
+<head>
+<title></title>
+<style>
+  button{
+      position: fixed;top: 45%;left: 45%;
+      border-radius: 30px;
+      height: 40px;
+      width: 110px;
+      color: rgb(1, 81, 155);
+     border-color: rgb(1, 81, 155);
+  }
+  
+
+</style>
+</head>
+<body>
+<font color: "red">
+<center>
+<button onclick="javascript:myFun()">Change color</button>
+</font>
+</center>
+<script type="text/javascript">
+    function myFun()
+    {
+    var randcol= "";
+    var allchar="0123456789ABCDEF";
+    for(var i=0; i<6; i++)
+    {
+    randcol += allchar[Math.floor(Math.random()*16)];
+    }
+    document.body.style.backgroundColor= "#"+randcol;
+    }
+    </script>
+</body>
+</html>
