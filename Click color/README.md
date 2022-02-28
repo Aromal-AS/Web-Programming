@@ -1,0 +1,1 @@
+This is an illustration of OnClick event using CSS.
