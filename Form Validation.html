@@ -1,0 +1,116 @@
+<html>
+<head>
+<style>
+    table{
+     position: fixed;top: 35%;left: 28%;   
+    }
+    .table:hover{
+        background-color:rgb(207, 205, 205);
+        color: rgb(253, 253, 253);
+    }
+    .ab:hover{
+        border-color:rgb(255, 54, 54);
+        border-width: 3px;
+    }
+    .btn:hover{
+        border-color:rgb(255, 54, 54);
+        border-width: 3px;
+    }
+    #h1:hover{
+        color: rgba(57, 157, 182, 0.938);
+    }
+
+    
+</style>    
+<script>
+function doc()
+{
+var name = document.forms["RegForm"]["Name"];
+var email = document.forms["RegForm"]["EMail"];
+var phone = document.forms["RegForm"]["Telephone"];
+var what = document.forms["RegForm"]["Subject"];
+var password = document.forms["RegForm"]["Password"];
+var address = document.forms["RegForm"]["Address"];
+if (name.value == "")
+{
+window.alert("Please enter your name.");
+name.focus();
+return false;
+}
+if (address.value == "")
+{
+window.alert("Please enter your address.");
+address.focus();
+return false;
+}
+if (email.value == "")
+{
+window.alert("Please enter a valid email address.");
+email.focus();
+return false;
+}
+if (phone.value == "")
+{
+window.alert("Please enter your telephone number.");
+phone.focus();
+return false;
+}
+if (password.value == "")
+{
+window.alert("Please enter your password");
+password.focus();
+return false;
+}
+if (what.selectedIndex < 1)
+{
+alert("Please enter your course.");
+what.focus();
+return false;
+}
+return true;
+}
+</script>
+</head>
+<body>
+<h1 style="text-align: center;" id="h1">REGISTRATION FORM</h1>
+<form name="RegForm" action=""
+onsubmit="return doc()" method="post">
+<table align="center" border="1" class="table">
+<tr>
+<td>Name: </td><td><input type="text"
+size="65" name="Name"  class="ab"/></td></tr>
+<tr>
+<td>Address: </td><td><input type="text"
+size="65" name="Address"  class="ab"/></td></tr>
+<tr >
+<td>E-mail Address:</td><td> <input type="email"
+size="65" name="EMail" class="ab"/></td></tr>
+<tr>
+<td>Password:</td><td> <input type="password"
+size="65" name="Password" class="ab" /></td></tr>
+<tr>
+<td>Telephone:</td><td> <input type="number"
+size="65" name="Telephone"  class="ab"/></td></tr>
+<tr >
+<td>
+SELECT YOUR COURSE</td>
+<td> <select type="text" value="" name="Subject"  class="ab">
+<option>SELECT</option>
+<option>B TECH</option>
+<option>BBA</option>
+<option>BCA</option>
+<option>B.COM</option>
+<option>Bsc Computer Science</option>
+</select>
+</td>
+</tr >
+<tr><td>
+<input type="submit"
+value="send" name="Submit" class="btn"/></td>
+<td><input type="reset"
+value="Reset" name="Reset" class="btn"/></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
