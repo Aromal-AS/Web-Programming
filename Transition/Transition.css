@@ -1,0 +1,28 @@
+body{
+    background-color: rgba(164, 250, 93, 0.623);
+}
+img{
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+
+    transition: transform 4s,width 4s,height 4s;
+    transition-delay: ;
+}
+img:hover{
+    transform: rotate(360deg);
+    width: 300px;
+    height: 300px;
+    
+}
+h1:hover{
+    border-style: solid;
+    border-color:rgb(231, 18, 18);
+border-width: 0px 0px 0px 10px;
+}
+h1{
+    color: rgb(12, 151, 137);
+}
+    
